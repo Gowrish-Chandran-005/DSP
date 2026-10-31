@@ -1,0 +1,90 @@
+{
+  "project": "Student Burnout Risk Estimation",
+  "tabular_models": {
+    "model_a": {
+      "file": "burnout_model_a.joblib",
+      "input_feature_count": 15,
+      "features": [
+        "age",
+        "academic_year",
+        "study_hours_per_day",
+        "exam_pressure",
+        "academic_performance",
+        "sleep_hours",
+        "physical_activity",
+        "social_support",
+        "screen_time",
+        "internet_usage",
+        "financial_stress",
+        "family_expectation",
+        "gender_Female",
+        "gender_Male",
+        "gender_Other"
+      ],
+      "purpose": "Academic and lifestyle burnout-score estimate",
+      "previous_test_metrics": {
+        "mae": 0.8699,
+        "rmse": 1.1195,
+        "r2": 0.5461
+      }
+    },
+    "model_b": {
+      "file": "burnout_model_b.joblib",
+      "input_feature_count": 18,
+      "features": [
+        "age",
+        "academic_year",
+        "study_hours_per_day",
+        "exam_pressure",
+        "academic_performance",
+        "sleep_hours",
+        "physical_activity",
+        "social_support",
+        "screen_time",
+        "internet_usage",
+        "financial_stress",
+        "family_expectation",
+        "stress_level",
+        "anxiety_score",
+        "depression_score",
+        "gender_Female",
+        "gender_Male",
+        "gender_Other"
+      ],
+      "purpose": "Burnout-score estimate including questionnaire scores",
+      "previous_test_metrics": {
+        "mae": 0.6442,
+        "rmse": 0.8494,
+        "r2": 0.7387
+      }
+    }
+  },
+  "visual_model": {
+    "file": "emotion_model.joblib",
+    "feature_file": "emotion_feature_columns.json",
+    "input_feature_count": 104,
+    "classes": [
+      "Anger",
+      "Confusion",
+      "Disgust",
+      "Happiness",
+      "Neutral",
+      "Surprise"
+    ],
+    "purpose": "Video-derived emotion classification, not burnout prediction",
+    "grouped_cv": {
+      "method": "StratifiedGroupKFold",
+      "best_model": "RBF SVM",
+      "accuracy": 0.5199,
+      "balanced_accuracy": 0.3489,
+      "macro_f1": 0.3266
+    }
+  },
+  "limitations": [
+    "Tabular benchmark uses synthetic data; metrics do not establish real-world validity.",
+    "Emotion labels are not burnout labels.",
+    "The emotion model must receive the same 104 features in the same order.",
+    "Do not use mental_health_index, risk_level, or dropout_risk as input features.",
+    "Predictions are estimates, not a clinical diagnosis."
+  ]
+}

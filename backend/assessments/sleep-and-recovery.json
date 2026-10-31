@@ -1,0 +1,106 @@
+{
+  "assessment_id": "sleep-and-recovery",
+  "title": "Sleep & Recovery Assessment",
+  "version": "1.0.0",
+  "purpose": "Evaluates sleep duration, schedule regularity, subjective sleep quality, and academic disruption to sleep.",
+  "description": "Helps students assess whether their sleep habits provide adequate physiological and cognitive recovery between demanding lecture and lab days.",
+  "target_population": "Students observing irregular bedtimes or daytime sleepiness",
+  "estimated_duration_minutes": 3,
+  "instructions": "Answer the following questions based on your typical sleep patterns over the last 14 days. These questions are for your personal reflection.",
+  "source": "Calma Educational Prototype - Circadian Rhythm & Sleep Pacing Module.",
+  "validation_status": "Educational self-reflection questionnaire; not a clinical sleep diagnostic.",
+  "disclaimer": "This questionnaire is not an evaluation for insomnia, sleep apnea, or medical sleep disorders. If you experience persistent sleep disruption, consult campus health services.",
+  "scoring": {
+    "type": "Descriptive metrics and feature mapping for sleep_hours",
+    "scale_range": "3.0 to 12.0 hours/night",
+    "interpretation": "7 to 9 hours of nightly sleep is the recommended guideline for university students. Sleeping fewer than 6 hours regularly is strongly correlated with increased study exhaustion."
+  },
+  "questions": [
+    {
+      "id": "sleep_q1",
+      "text": "On average, how many hours of sleep do you get per night?",
+      "category": "Sleep Duration",
+      "response_type": "numeric_input",
+      "unit": "hours/night",
+      "min_value": 3.0,
+      "max_value": 14.0,
+      "required": true,
+      "model_input_feature_mapping": "sleep_hours"
+    },
+    {
+      "id": "sleep_q2",
+      "text": "How would you rate the overall quality of your sleep?",
+      "category": "Subjective Quality",
+      "response_type": "likert_scale",
+      "scale_min": 1,
+      "scale_max": 5,
+      "scale_labels": {
+        "1": "Very poor / Restless and broken",
+        "2": "Fair / Frequently interrupted",
+        "3": "Average",
+        "4": "Good and sound",
+        "5": "Very deep and restorative"
+      },
+      "required": true
+    },
+    {
+      "id": "sleep_q3",
+      "text": "How refreshed and alert do you typically feel within 30 minutes of waking up?",
+      "category": "Morning Alertness",
+      "response_type": "likert_scale",
+      "scale_min": 1,
+      "scale_max": 5,
+      "scale_labels": {
+        "1": "Extremely groggy and exhausted",
+        "2": "Somewhat tired",
+        "3": "Moderately awake",
+        "4": "Well-rested",
+        "5": "Fully energized and ready"
+      },
+      "required": true
+    },
+    {
+      "id": "sleep_q4",
+      "text": "How consistent are your bedtimes and wake times throughout the week?",
+      "category": "Schedule Consistency",
+      "response_type": "multiple_choice",
+      "options": [
+        "Highly erratic (bedtime shifts by more than 3 hours)",
+        "Somewhat variable depending on assignment deadlines",
+        "Consistent on weekdays, shifting on weekends",
+        "Very consistent (bedtime varies by less than 1 hour every day)"
+      ],
+      "required": true
+    },
+    {
+      "id": "sleep_q5",
+      "text": "How often does academic anxiety or deadline worry keep you awake when trying to fall asleep?",
+      "category": "Academic Interference",
+      "response_type": "likert_scale",
+      "scale_min": 1,
+      "scale_max": 5,
+      "scale_labels": {
+        "1": "Never",
+        "2": "Rarely",
+        "3": "A few times a month",
+        "4": "Weekly",
+        "5": "Multiple nights per week"
+      },
+      "required": true,
+      "model_input_feature_mapping": "anxiety_score"
+    },
+    {
+      "id": "sleep_q6",
+      "text": "Do you feel you have sufficient downtime outside of academic responsibilities to unwind before going to sleep?",
+      "category": "Wind-Down Time",
+      "response_type": "multiple_choice",
+      "options": [
+        "No downtime (study right until turning off lights)",
+        "Short 10-15 minute buffer",
+        "Adequate 30-45 minute wind-down routine",
+        "Generous 1+ hour evening relaxation"
+      ],
+      "required": false
+    }
+  ]
+}

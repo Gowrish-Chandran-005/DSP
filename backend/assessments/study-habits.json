@@ -1,0 +1,122 @@
+{
+  "assessment_id": "study-habits",
+  "title": "Study Habits & Workload Assessment",
+  "version": "1.1.0",
+  "purpose": "Documents daily study hours, session structure, break intervals, and self-rated concentration.",
+  "description": "Examines how students organize coursework and independent study time to identify healthy pacing habits and prevent continuous unspaced marathons.",
+  "target_population": "Students engaged in active course modules",
+  "estimated_duration_minutes": 4,
+  "instructions": "Reflect on your typical academic study routine over the past 7 days. Select the answers that most closely match your study sessions.",
+  "source": "Calma Educational Prototype - Academic Pacing & Habits Module.",
+  "validation_status": "Empirical behavioural assessment; self-reported study habits.",
+  "disclaimer": "This questionnaire is an educational reflection aid. Study habits vary by major, course requirements, and individual learning preferences.",
+  "scoring": {
+    "type": "Descriptive habit metrics and feature inputs for study_hours_per_day",
+    "scale_range": "Categorical and numeric hours/day",
+    "interpretation": "Continuous study blocks exceeding 3-4 hours without breaks correlate with increased mental fatigue and lower information retention."
+  },
+  "questions": [
+    {
+      "id": "habits_q1",
+      "text": "On average, how many hours per day do you spend studying outside of classroom lectures?",
+      "category": "Time Investment",
+      "response_type": "numeric_input",
+      "unit": "hours/day",
+      "min_value": 0,
+      "max_value": 16,
+      "required": true,
+      "model_input_feature_mapping": "study_hours_per_day"
+    },
+    {
+      "id": "habits_q2",
+      "text": "What is the typical duration of a single continuous study session before you step away?",
+      "category": "Session Pacing",
+      "response_type": "multiple_choice",
+      "options": [
+        "Less than 30 minutes",
+        "30 to 50 minutes (Pomodoro style)",
+        "50 to 90 minutes",
+        "2 to 3 hours without stopping",
+        "More than 3 hours continuously"
+      ],
+      "required": true
+    },
+    {
+      "id": "habits_q3",
+      "text": "How frequently do you take structured physical or mental pauses during study days?",
+      "category": "Break Frequency",
+      "response_type": "multiple_choice",
+      "options": [
+        "Rarely or only when exhausted",
+        "Every 1 to 2 hours",
+        "Every 45-50 minutes (Consistent breaks)",
+        "Frequent short micro-breaks every 25 minutes"
+      ],
+      "required": true
+    },
+    {
+      "id": "habits_q4",
+      "text": "What is the longest consecutive study block you have completed this week without stepping away?",
+      "category": "Consecutive Strain",
+      "response_type": "numeric_input",
+      "unit": "hours",
+      "min_value": 0,
+      "max_value": 12,
+      "required": false
+    },
+    {
+      "id": "habits_q5",
+      "text": "How often does assignment procrastination lead to late-night cramming before due dates?",
+      "category": "Procrastination",
+      "response_type": "likert_scale",
+      "scale_min": 1,
+      "scale_max": 5,
+      "scale_labels": {
+        "1": "Never / Always finish early",
+        "2": "Rarely",
+        "3": "Occasionally for major projects",
+        "4": "Frequently",
+        "5": "Almost every week"
+      },
+      "required": true
+    },
+    {
+      "id": "habits_q6",
+      "text": "How would you rate your overall academic workload this semester?",
+      "category": "Perceived Workload",
+      "response_type": "multiple_choice",
+      "options": [
+        "Light and very manageable",
+        "Balanced and steady",
+        "Heavy but sustainable with effort",
+        "Intense and near capacity",
+        "Unmanageably heavy"
+      ],
+      "required": true,
+      "model_input_feature_mapping": "exam_pressure"
+    },
+    {
+      "id": "habits_q7",
+      "text": "How many major project deliverables or exams do you have scheduled in the next 14 days?",
+      "category": "Upcoming Deadlines",
+      "response_type": "numeric_input",
+      "unit": "milestones",
+      "min_value": 0,
+      "max_value": 15,
+      "required": false
+    },
+    {
+      "id": "habits_q8",
+      "text": "How would you rate your typical concentration and mental clarity during study sessions this week?",
+      "category": "Concentration",
+      "response_type": "numeric_range",
+      "scale_min": 1,
+      "scale_max": 10,
+      "scale_labels": {
+        "1": "Constantly distracted and unfocused",
+        "10": "Sharp, deep, and uninterrupted focus"
+      },
+      "required": true
+    }
+  ]
+}

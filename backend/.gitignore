@@ -1,0 +1,9 @@
+node_modules/
+.env
+.env.local
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class

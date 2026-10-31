@@ -1,0 +1,255 @@
+---
+name: Serene Biophilic Sanctuary
+colors:
+  surface: '#e8fff2'
+  surface-dim: '#c9dfd3'
+  surface-bright: '#e8fff2'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#e3f9ec'
+  surface-container: '#ddf3e6'
+  surface-container-high: '#d7ede1'
+  surface-container-highest: '#d2e8db'
+  on-surface: '#0c1f18'
+  on-surface-variant: '#404941'
+  inverse-surface: '#22342c'
+  inverse-on-surface: '#e0f6e9'
+  outline: '#717970'
+  outline-variant: '#c0c9be'
+  surface-tint: '#2e6a41'
+  primary: '#003b1b'
+  on-primary: '#ffffff'
+  primary-container: '#14532d'
+  on-primary-container: '#87c695'
+  inverse-primary: '#96d5a3'
+  secondary: '#4b6459'
+  on-secondary: '#ffffff'
+  secondary-container: '#cde9db'
+  on-secondary-container: '#516a5f'
+  tertiary: '#1e3635'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#354d4b'
+  on-tertiary-container: '#a3bdba'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#b1f2be'
+  primary-fixed-dim: '#96d5a3'
+  on-primary-fixed: '#00210d'
+  on-primary-fixed-variant: '#12512c'
+  secondary-fixed: '#cde9db'
+  secondary-fixed-dim: '#b1cdbf'
+  on-secondary-fixed: '#072017'
+  on-secondary-fixed-variant: '#334c42'
+  tertiary-fixed: '#cde8e5'
+  tertiary-fixed-dim: '#b1ccc9'
+  on-tertiary-fixed: '#061f1e'
+  on-tertiary-fixed-variant: '#334b49'
+  background: '#e8fff2'
+  on-background: '#0c1f18'
+  surface-variant: '#d2e8db'
+typography:
+  display:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 48px
+    fontWeight: '700'
+    lineHeight: 56px
+    letterSpacing: -0.03em
+  display-mobile:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 36px
+    fontWeight: '700'
+    lineHeight: 44px
+    letterSpacing: -0.025em
+  headline-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 32px
+    fontWeight: '600'
+    lineHeight: 40px
+    letterSpacing: -0.02em
+  headline-lg-mobile:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 26px
+    fontWeight: '600'
+    lineHeight: 34px
+    letterSpacing: -0.015em
+  headline-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 24px
+    fontWeight: '600'
+    lineHeight: 32px
+    letterSpacing: -0.015em
+  headline-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 20px
+    fontWeight: '600'
+    lineHeight: 28px
+    letterSpacing: -0.01em
+  title-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 18px
+    fontWeight: '600'
+    lineHeight: 26px
+    letterSpacing: -0.005em
+  title-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 16px
+    fontWeight: '600'
+    lineHeight: 24px
+    letterSpacing: 0em
+  body-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 16px
+    fontWeight: '400'
+    lineHeight: 26px
+    letterSpacing: 0em
+  body-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 22px
+    letterSpacing: 0em
+  body-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 13px
+    fontWeight: '400'
+    lineHeight: 18px
+    letterSpacing: 0.005em
+  label-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 13px
+    fontWeight: '600'
+    lineHeight: 18px
+    letterSpacing: 0.02em
+  label-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 11px
+    fontWeight: '600'
+    lineHeight: 16px
+    letterSpacing: 0.03em
+  label-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 10px
+    fontWeight: '500'
+    lineHeight: 14px
+    letterSpacing: 0.04em
+rounded:
+  sm: 0.5rem
+  DEFAULT: 1rem
+  md: 1.5rem
+  lg: 2rem
+  xl: 3rem
+  full: 9999px
+spacing:
+  gutter: 1.25rem
+  gutter-tablet: 1.5rem
+  gutter-desktop: 2rem
+  margin: 1.25rem
+  margin-tablet: 2rem
+  margin-desktop: 3rem
+  space-xs: 0.375rem
+  space-sm: 0.75rem
+  space-md: 1.25rem
+  space-lg: 2rem
+  space-xl: 3rem
+---
+
+## Brand & Style
+
+The design system embodies a calm, mindful sanctuary engineered specifically for students navigating rigorous academic demands. Instead of sterile hospital metrics or alarming performance dashboards, the interface evokes a restorative greenhouse: tranquil, protective, organic, and non-judgmental.
+
+### Personality & Emotional Tenor
+- **Restorative & Reassuring:** Prioritizes decompression over vigilance. Metrics act as gentle reflections rather than clinical verdicts.
+- **Nurturing & Human-Centric:** Avoids panic-inducing indicators, high-contrast alerts, or harsh warning cues. Elevated burnout markers are treated with soft amber awareness, inviting reflection rather than provoking stress.
+- **Subtle Organic Vitality:** Employs breathing status rhythms, soft botanical gradients, and peaceful micro-movements that promote parasympathetic recovery.
+
+### Visual Aesthetic
+The interface synthesizes organic minimalism with airy glassmorphism. Surfaces emulate frosted morning glass overlooking misty foliage: light-permeable panes, translucent multi-layered depth, soft liquid outlines, and tactile yet weightless card constructs.
+
+## Colors
+
+The palette draws inspiration from Japanese forest bathing (*shinrin-yoku*), botanical glasshouses, and morning dew. The entire chromatic architecture avoids jarring contrasts and strictly forbids crimson or aggressive scarlet tones, even under critical thresholds.
+
+### Primary Palette
+- **Deep Forest Green (`#14532D`):** The grounding anchor. Used for primary call-to-actions, prominent typographic titles, active tab highlights, and structural emphasis. Communicates stability and deep tranquility.
+- **Sage (`#CFEBDD`):** Mid-tone botanical buffer. Drives tinted secondary surfaces, active states, soft borders, and filled chips.
+- **Light Aqua (`#D8F3F0`):** Refreshing, clear accent. Used for atmospheric gradient shifts, background orb accents, and recovery state signifiers.
+- **Muted Grey-Green Neutral (`#5B6F65`):** Secondary metadata, inactive states, axis lines, and supportive editorial body text. Ensures legible contrast without pure black severity.
+
+### Canvas & Backgrounds
+- **Mint Atmosphere (`#E9F7EF`):** The primary page canvas. A soft, warm-mint wash that replaces pure cold white to shield user eyes during late-night study sessions.
+- **Deep Green-Black Body (`#10261B`):** Selected exclusively for high-clarity reading across headings and core body paragraphs. Softer and less straining than `#000000`.
+
+### Alert & Notice Architecture
+- **Soft Warm Amber (`#E09B4C`):** Replaces destructive red across the system. Denotes elevated exhaustion, depleted efficacy, or recommended rest cycles. Framed with gentle amber tinted washes (`#FCF6ED`) and soft glowing edges.
+
+## Typography
+
+The typography uses **Plus Jakarta Sans** across all roles to achieve an open, contemporary, and warmly empathetic tone. The wide geometric counters, friendly terminal curves, and balanced x-height eliminate technical friction and clinical sterility.
+
+### Typographic Hierarchy Rules
+- **Display & Headings:** Rendered with tighter letter spacing (`-0.03em` to `-0.015em`) and soft semi-bold or bold weights. Used for mindful greeting moments, metric summaries, and reflective check-in prompts.
+- **Body Text:** Uses generous line heights (`1.57` to `1.62`) and muted contrast (`#10261B` for focus; `#5B6F65` for context) to ensure readability without ocular strain during prolonged review.
+- **Labels & Overlines:** Slight tracking (`0.02em` to `0.04em`) applied to small capsule titles, metric categories (e.g., Emotional Exhaustion, Cynicism, Academic Efficacy), and navigation elements. Never rendered in all-caps shouting; prefer Title Case or Sentence Case.
+
+## Layout & Spacing
+
+The layout philosophy centers on fluid spatial harmony and generous breathing margins. Visual elements avoid density and crowded columns, allowing each wellness metric and chart to occupy distinct, unhurried zones.
+
+### Spatial Rhythm & Grid Structure
+- **Mobile (Base to 639px):** 4-column fluid layout with `1.25rem` (20px) outer margins and gutters. Cards take 100% column width to maximize touch comfort.
+- **Tablet (640px to 1023px):** 8-column layout with `2rem` (32px) margins and `1.5rem` (24px) gutters. Burnout dimensions display in paired modular blocks.
+- **Desktop (1024px+):** 12-column layout capped at a maximum width of `1280px` centered canvas, utilizing `3rem` (48px) margins and `2rem` (32px) gutters. Complex trend charts expand across 8 columns, with supportive reflection prompts across 4 columns.
+
+### Density & Breathing Room
+Content cards enforce generous internal padding (`space-md` on mobile, `space-lg` on desktop) ensuring data points never crowd card edges. Vertical section gaps rely on `space-xl` (48px) to establish paced cognitive intake.
+
+## Elevation & Depth
+
+Visual hierarchy is communicated through luminous multi-layered glassmorphism and ultra-diffused atmospheric illumination. Traditional opaque drop shadows and harsh outlines are excluded.
+
+### The Glass Surface Architecture
+Panels mimic semi-opaque frosted glass hovering over soft, slow-moving botanical color fields:
+- **Base Ambient Canvas:** Tinted fluid background (`#E9F7EF`) overlaid with slow-drifting, deeply blurred organic blurs of Sage (`#CFEBDD`) and Light Aqua (`#D8F3F0`).
+- **Surface Tier 1 (Cards & Modules):** `background: rgba(255, 255, 255, 0.68)`, backed by `backdrop-filter: blur(24px) saturate(140%)`. Outlined with a soft translucent highlight: `border: 1px solid rgba(255, 255, 255, 0.75)`.
+- **Surface Tier 2 (Floating Popovers & Action Sheets):** `background: rgba(255, 255, 255, 0.88)`, `backdrop-filter: blur(32px)`, `border: 1px solid rgba(255, 255, 255, 0.9)`.
+
+### Shadow & Glow Physics
+Shadows are ultra-diffused, tinted with the deep botanical base rather than neutral black:
+- **Default Floating Elevation:** `0 12px 32px -8px rgba(20, 83, 45, 0.06), 0 4px 12px -2px rgba(20, 83, 45, 0.03)`.
+- **Hover & Active Elevation:** `0 20px 40px -12px rgba(20, 83, 45, 0.10), 0 6px 16px -2px rgba(20, 83, 45, 0.04)`.
+- **Warm Notice Glow:** `0 12px 32px -6px rgba(224, 155, 76, 0.14)`.
+
+## Shapes
+
+The design system relies on welcoming, pill-shaped geometry. Hard corners and sharp angular silhouettes are absent to reduce cognitive friction and promote visual serenity.
+
+### Corner Radius System
+- **Main Metric Panels & Glass Cards:** Explicitly crafted with a continuous organic radius between `28px` and `32px` (`rounded-xl` to custom `32px`).
+- **Interactive Buttons & Chips:** Full pill contour (`9999px`) for seamless tactile invitation.
+- **Input Fields & Modal Sheets:** `20px` to `24px` rounded profiles that echo the softness of the primary card containers.
+- **Status Indicators & Avatars:** Perfect circles (`50%` / circular geometry).
+
+## Components
+
+### Buttons
+- **Primary:** Deep Forest Green (`#14532D`) background with pure white typography, full pill radius, and subtle botanical inner glow. Hover triggers a gentle upward lift and deep glow (`rgba(20, 83, 45, 0.2)`).
+- **Secondary / Glass Button:** Translucent white fill (`rgba(255, 255, 255, 0.6)`), border `1px solid rgba(255, 255, 255, 0.8)`, text `#14532D`.
+- **Quiet / Ghost:** Transparent background, text `#5B6F65`, hover transition to `rgba(207, 235, 221, 0.3)`.
+
+### Chips & Filter Pills
+- **State Selection Chips:** Pill-shaped, `padding: 0.5rem 1.25rem`. Inactive state sits on `rgba(255, 255, 255, 0.5)` with `#5B6F65` text. Active state adopts Sage green (`#CFEBDD`) fill with `#14532D` label and gentle inset shadow.
+
+### Input Fields
+- Built on translucent rounded troughs (`background: rgba(255, 255, 255, 0.55)`), border `1px solid rgba(207, 235, 221, 0.6)`. Active focus introduces an organic halo (`0 0 0 3px rgba(207, 235, 221, 0.45)`) and transitions background opacity to `0.85`.
+
+### Checkboxes & Radio Controls
+- Circular organic toggles with soft Spring easing. Selected checkboxes showcase a deep forest green wash with a soft white check glyph; unselected states use a soft sage ring.
+
+### Cards & Metric Containers
+- Glassmorphic panels with `28px` to `32px` corner radii. Internal padding calibrated to `2rem`. Feature dual-surface hierarchy: nested metrics rest within inset translucent pods (`rgba(255, 255, 255, 0.45)`).
+
+### Specialized System Components
+- **Breathing Status Orbs:** Dynamic, multi-layered radial gradient spheres representing real-time burnout balance (Exhaustion, Cynicism, Efficacy). Animated with a gentle 4-second sinusoidal expansion and contraction pulse (*inhale/exhale* rhythm). Orbs transition fluidly between Light Aqua, Sage, and Soft Warm Amber based on current equilibrium.
+- **Serene Trend Line Charts:** Minimalist linear curves rendered with anti-aliased 2.5px paths. No harsh grid lines; relies solely on soft horizontal reference levels at 20% opacity. The area beneath the curve carries a soft vertical gradient falling from `rgba(20, 83, 45, 0.12)` down to `rgba(20, 83, 45, 0.0)`. Interactive data points reveal frosted glass tooltip capsules with gentle spring dynamics.
+- **Mindful Notice Banners:** For elevated burnout markers. Tinted with soft amber glass (`rgba(252, 246, 237, 0.85)`), amber-tinted border (`#E09B4C` at 30% opacity), and deep green-black supportive copy, avoiding alarming badge icons in favor of calm, actionable reflection questions.

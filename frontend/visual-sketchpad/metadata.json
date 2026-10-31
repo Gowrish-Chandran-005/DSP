@@ -1,0 +1,6 @@
+{
+  "name": "Calma - Mindful Academic Rhythm",
+  "description": "A serene biophilic academic pacing sanctuary featuring non-diagnostic behavioral rhythm mapping, SHAP attribution insights, and interactive restorative routines.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

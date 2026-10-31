@@ -1,0 +1,116 @@
+{
+  "assessment_id": "academic-workload",
+  "title": "Academic Workload & Context Assessment",
+  "version": "1.1.0",
+  "purpose": "Measures semester course load, perceived curriculum rigor, institutional exam pressure, and personal balance.",
+  "description": "Gathers academic context to help understand whether student stress is driven by peak semester milestones, credit overloads, or external family expectations.",
+  "target_population": "Enrolled university students across undergraduate and postgraduate degrees",
+  "estimated_duration_minutes": 4,
+  "instructions": "Answer the following questions about your current academic term. All questions include options to skip or indicate 'Prefer not to answer' if desired.",
+  "source": "Calma Educational Prototype - Academic Load Audit.",
+  "validation_status": "Curricular workload self-audit.",
+  "disclaimer": "This questionnaire captures self-reported academic workload perceptions. It does not evaluate academic competence or institutional program accreditation.",
+  "scoring": {
+    "type": "Descriptive academic context and feature inputs for exam_pressure and family_expectation",
+    "scale_range": "1.0 to 10.0 scale",
+    "interpretation": "High course loads combined with intense family expectations and low peer support produce the highest risk profiles in our synthetic benchmark dataset."
+  },
+  "questions": [
+    {
+      "id": "workload_q1",
+      "text": "How many total courses / subjects (including theory and lab components) are you registered for this term?",
+      "category": "Course Count",
+      "response_type": "numeric_input",
+      "unit": "courses",
+      "min_value": 1,
+      "max_value": 12,
+      "required": true
+    },
+    {
+      "id": "workload_q2",
+      "text": "How challenging would you rate the conceptual difficulty of your current courses?",
+      "category": "Course Rigor",
+      "response_type": "likert_scale",
+      "scale_min": 1,
+      "scale_max": 5,
+      "scale_labels": {
+        "1": "Very easy / Little effort needed",
+        "2": "Comfortably manageable",
+        "3": "Moderately challenging",
+        "4": "Quite difficult",
+        "5": "Extremely difficult / Straining my limits"
+      },
+      "required": true
+    },
+    {
+      "id": "workload_q3",
+      "text": "How would you rate the academic expectations placed on you by your family or guardians?",
+      "category": "Family Expectations",
+      "response_type": "numeric_range",
+      "scale_min": 1,
+      "scale_max": 10,
+      "scale_labels": {
+        "1": "Zero external pressure / Full autonomy",
+        "10": "Intense expectations to achieve top marks"
+      },
+      "required": true,
+      "model_input_feature_mapping": "family_expectation"
+    },
+    {
+      "id": "workload_q4",
+      "text": "Are you currently experiencing significant financial stress regarding living expenses, tuition, or campus costs?",
+      "category": "Financial Context",
+      "response_type": "numeric_range",
+      "scale_min": 1,
+      "scale_max": 10,
+      "scale_labels": {
+        "1": "Comfortable / No financial stress",
+        "10": "Severe financial strain impacting study"
+      },
+      "required": true,
+      "model_input_feature_mapping": "financial_stress"
+    },
+    {
+      "id": "workload_q5",
+      "text": "Do you have sufficient time in a typical week for personal hobbies, physical exercise, or restorative leisure?",
+      "category": "Personal Time",
+      "response_type": "multiple_choice",
+      "options": [
+        "Yes, ample time for personal pursuits",
+        "Just enough to maintain basic hobbies",
+        "Very little time (less than 2 hours per week)",
+        "Zero personal time; entire schedule consumed by coursework",
+        "Prefer not to answer"
+      ],
+      "required": false
+    },
+    {
+      "id": "workload_q6",
+      "text": "How accessible and helpful are your professors, teaching assistants, or academic mentors when you encounter difficulty?",
+      "category": "Faculty Support",
+      "response_type": "multiple_choice",
+      "options": [
+        "Highly accessible and supportive",
+        "Moderately accessible",
+        "Difficult to reach or unhelpful",
+        "Have not needed to seek faculty help",
+        "Prefer not to answer"
+      ],
+      "required": false
+    },
+    {
+      "id": "workload_q7",
+      "text": "How satisfied are you with your academic performance so far this semester?",
+      "category": "Academic Satisfaction",
+      "response_type": "numeric_range",
+      "scale_min": 1,
+      "scale_max": 10,
+      "scale_labels": {
+        "1": "Very dissatisfied",
+        "10": "Fully satisfied and proud of results"
+      },
+      "required": true,
+      "model_input_feature_mapping": "academic_performance"
+    }
+  ]
+}

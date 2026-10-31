@@ -1,0 +1,100 @@
+{
+  "assessment_id": "optional-daily-check-in",
+  "title": "Optional Daily Student Check-In",
+  "version": "1.0.0",
+  "purpose": "A quick 1-minute daily reflection capturing momentary energy, perceived daily workload, and break readiness.",
+  "description": "Designed for students who want a lightweight daily touchpoint to pause, assess their energy levels, and make proactive micro-adjustments to study plans.",
+  "target_population": "University students engaged in daily study sessions",
+  "estimated_duration_minutes": 1,
+  "instructions": "Take 60 seconds to check in with how you are feeling right now. These responses are completely optional and help personalize your daily dashboard tips.",
+  "source": "Calma Educational Prototype - Daily Student Pulse.",
+  "validation_status": "Formative micro-reflection; not scored clinically.",
+  "disclaimer": "This daily check-in is not a clinical assessment or psychological test. It is a mindful pause to encourage healthy daily pacing.",
+  "scoring": {
+    "type": "Formative habit reflection (unscored)",
+    "interpretation": "Provides contextual insights to suggest short mindful pauses or library wind-downs when fatigue is reported."
+  },
+  "questions": [
+    {
+      "id": "daily_q1",
+      "text": "How are you feeling about your studies today?",
+      "category": "Daily Mood",
+      "response_type": "multiple_choice",
+      "options": [
+        "Energized and ready to learn",
+        "Calm and steady",
+        "A little unmotivated but okay",
+        "Overwhelmed and anxious",
+        "Exhausted"
+      ],
+      "required": false
+    },
+    {
+      "id": "daily_q2",
+      "text": "How mentally exhausted do you feel right now on a scale from 1 to 5?",
+      "category": "Momentary Fatigue",
+      "response_type": "likert_scale",
+      "scale_min": 1,
+      "scale_max": 5,
+      "scale_labels": {
+        "1": "Fully rested (1/5)",
+        "2": "Mild tiredness (2/5)",
+        "3": "Moderate fatigue (3/5)",
+        "4": "High exhaustion (4/5)",
+        "5": "Completely depleted (5/5)"
+      },
+      "required": false
+    },
+    {
+      "id": "daily_q3",
+      "text": "How manageable does today's academic workload feel?",
+      "category": "Workload Manageability",
+      "response_type": "multiple_choice",
+      "options": [
+        "Very manageable / Ahead of schedule",
+        "Realistic to complete today",
+        "A bit rushed but possible",
+        "Unmanageably heavy today"
+      ],
+      "required": false
+    },
+    {
+      "id": "daily_q4",
+      "text": "How well did you sleep last night?",
+      "category": "Sleep Quality",
+      "response_type": "multiple_choice",
+      "options": [
+        "Slept soundly (7+ hours, well-rested)",
+        "Average sleep (around 6 hours)",
+        "Restless or short sleep (under 5 hours)",
+        "Barely slept (late-night study cram)"
+      ],
+      "required": false
+    },
+    {
+      "id": "daily_q5",
+      "text": "Would a short 5-minute break or mindful breathing pause be helpful right now?",
+      "category": "Break Readiness",
+      "response_type": "multiple_choice",
+      "options": [
+        "Yes, I need to step away from screens for a few minutes",
+        "Maybe later after I finish this section",
+        "No, I am in a good flow state right now"
+      ],
+      "required": false
+    },
+    {
+      "id": "daily_q6",
+      "text": "Is there anything you would like to adjust in today's study plan?",
+      "category": "Pacing Adjustment",
+      "response_type": "multiple_choice",
+      "options": [
+        "Stick to my planned schedule",
+        "Finish earlier tonight to get extra sleep",
+        "Break a large assignment into two smaller pieces",
+        "Reach out to a classmate or mentor for help with a difficult topic"
+      ],
+      "required": false
+    }
+  ]
+}

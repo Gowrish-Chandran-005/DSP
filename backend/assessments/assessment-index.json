@@ -1,0 +1,68 @@
+{
+  "system": "Calma Student Burnout Risk Estimation & Early-Warning System",
+  "version": "1.0.0",
+  "organization": "VIT Vellore - Educational AI & Wellbeing Prototype",
+  "last_updated": "2026-10-23",
+  "assessments": [
+    {
+      "assessment_id": "student-burnout-screening",
+      "title": "Student Burnout & Academic Strain Screening",
+      "version": "1.2.0",
+      "file": "student-burnout-screening.json",
+      "purpose": "Self-reported screening of academic emotional exhaustion, study detachment, and academic confidence.",
+      "target_population": "Undergraduate and postgraduate university students",
+      "estimated_duration_minutes": 5,
+      "question_count": 8,
+      "validation_status": "Project-created screening instrument; non-diagnostic; maps to HistGradientBoosting Model B inputs.",
+      "requires_clinical_oversight": false
+    },
+    {
+      "assessment_id": "study-habits",
+      "title": "Study Habits & Workload Assessment",
+      "version": "1.1.0",
+      "file": "study-habits.json",
+      "purpose": "Collects structured information on daily study duration, pacing, break frequency, and concentration patterns.",
+      "target_population": "Students engaged in active course modules and project sprints",
+      "estimated_duration_minutes": 4,
+      "question_count": 8,
+      "validation_status": "Empirical behavioural assessment; self-reported study habits.",
+      "requires_clinical_oversight": false
+    },
+    {
+      "assessment_id": "sleep-and-recovery",
+      "title": "Sleep & Recovery Assessment",
+      "version": "1.0.0",
+      "file": "sleep-and-recovery.json",
+      "purpose": "Evaluates sleep consistency, restorative quality, and academic interference with circadian wind-down.",
+      "target_population": "Students observing sleep disruptions or late-night study cycles",
+      "estimated_duration_minutes": 3,
+      "question_count": 6,
+      "validation_status": "Educational self-reflection questionnaire; not a clinical sleep disorder diagnostic.",
+      "requires_clinical_oversight": false
+    },
+    {
+      "assessment_id": "academic-workload",
+      "title": "Academic Workload & Context Assessment",
+      "version": "1.1.0",
+      "file": "academic-workload.json",
+      "purpose": "Maps current credit load, upcoming lab reports/exams, perceived assignment rigor, and family/social pressures.",
+      "target_population": "Enrolled university students",
+      "estimated_duration_minutes": 4,
+      "question_count": 7,
+      "validation_status": "Curricular workload self-audit.",
+      "requires_clinical_oversight": false
+    },
+    {
+      "assessment_id": "optional-daily-check-in",
+      "title": "Optional Daily Student Check-In",
+      "version": "1.0.0",
+      "file": "optional-daily-check-in.json",
+      "purpose": "Rapid 1-minute daily reflection capturing momentary energy, task manageability, and break readiness.",
+      "target_population": "Students wanting light daily mindfulness and pacing calibration",
+      "estimated_duration_minutes": 1,
+      "question_count": 6,
+      "validation_status": "Formative micro-reflection; not scored clinically.",
+      "requires_clinical_oversight": false
+    }
+  ]
+}

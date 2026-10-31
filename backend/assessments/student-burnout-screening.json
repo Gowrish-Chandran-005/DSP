@@ -1,0 +1,150 @@
+{
+  "assessment_id": "student-burnout-screening",
+  "title": "Student Burnout & Academic Strain Screening",
+  "version": "1.2.0",
+  "purpose": "Collects self-reported student well-being markers covering emotional exhaustion, academic detachment, and perceived study efficacy.",
+  "description": "A structured 8-question self-report screening instrument created to help university students reflect on study-induced fatigue and identify when academic strain requires rest or campus support.",
+  "target_population": "University undergraduate and graduate students",
+  "estimated_duration_minutes": 5,
+  "instructions": "For each item below, please select the response that best describes your experience over the past two weeks. Be as honest as possible. Your answers are private to your session.",
+  "source": "Calma Educational Prototype - Adapted from academic burnout literature (conceptual MBI-SS dimensions).",
+  "validation_status": "Project-created screening questions; non-diagnostic; statistical inputs to Model B regression.",
+  "disclaimer": "This screening tool is for educational self-awareness only. It does not provide a psychiatric or clinical medical diagnosis. If you feel overwhelmed, free campus counseling services are available.",
+  "scoring": {
+    "type": "Continuous 0-10 Risk Estimation via HistGradientBoostingRegressor (Model B)",
+    "scale_range": "0.0 (Lower Risk) to 10.0 (Elevated Risk)",
+    "interpretation": "Scores between 0.0-3.9 suggest manageable workload and adequate rest. Scores between 4.0-6.9 suggest moderate strain where proactive study pauses are recommended. Scores between 7.0-10.0 indicate high fatigue where lightening study sprints and speaking with an advisor or counselor is strongly advised."
+  },
+  "questions": [
+    {
+      "id": "burnout_q1",
+      "text": "How often do you feel emotionally and mentally exhausted by your academic coursework?",
+      "category": "Emotional Exhaustion",
+      "response_type": "likert_scale",
+      "scale_min": 1,
+      "scale_max": 5,
+      "scale_labels": {
+        "1": "Never / Rarely",
+        "2": "A few times a month",
+        "3": "Once or twice a week",
+        "4": "Several times a week",
+        "5": "Every day"
+      },
+      "required": true,
+      "model_input_feature_mapping": "stress_level"
+    },
+    {
+      "id": "burnout_q2",
+      "text": "At the end of a typical study day, how drained of energy do you feel?",
+      "category": "Emotional Exhaustion",
+      "response_type": "likert_scale",
+      "scale_min": 1,
+      "scale_max": 5,
+      "scale_labels": {
+        "1": "Completely energized",
+        "2": "Mildly tired but refreshed",
+        "3": "Moderately fatigued",
+        "4": "Substantially drained",
+        "5": "Completely depleted"
+      },
+      "required": true,
+      "model_input_feature_mapping": "depression_score"
+    },
+    {
+      "id": "burnout_q3",
+      "text": "To what degree do you feel disconnected, indifferent, or cynical about the purpose of your degree assignments?",
+      "category": "Academic Detachment",
+      "response_type": "likert_scale",
+      "scale_min": 1,
+      "scale_max": 5,
+      "scale_labels": {
+        "1": "Strong sense of meaning & enthusiasm",
+        "2": "Occasional routine boredom",
+        "3": "Neutral / purely transactional",
+        "4": "Frequently detached and disengaged",
+        "5": "Completely alienated from coursework"
+      },
+      "required": true,
+      "model_input_feature_mapping": "academic_performance"
+    },
+    {
+      "id": "burnout_q4",
+      "text": "How confident do you feel in your capability to master challenging concepts in your upcoming courses?",
+      "category": "Academic Efficacy",
+      "response_type": "likert_scale",
+      "scale_min": 1,
+      "scale_max": 5,
+      "scale_labels": {
+        "1": "Very low confidence / feel incapable",
+        "2": "Somewhat doubtful under pressure",
+        "3": "Moderate confidence with regular effort",
+        "4": "Strong self-assurance in solving problems",
+        "5": "Extremely confident"
+      },
+      "required": true,
+      "model_input_feature_mapping": "academic_performance"
+    },
+    {
+      "id": "burnout_q5",
+      "text": "How would you rate the current overall pressure from impending exams and project deadlines?",
+      "category": "Workload & Exam Pressure",
+      "response_type": "numeric_range",
+      "scale_min": 1,
+      "scale_max": 10,
+      "scale_labels": {
+        "1": "Minimal / No pressure",
+        "10": "Overwhelming milestone pressure"
+      },
+      "required": true,
+      "model_input_feature_mapping": "exam_pressure"
+    },
+    {
+      "id": "burnout_q6",
+      "text": "How difficult is it for you to balance academic study demands with adequate personal rest and social life?",
+      "category": "Life Balance",
+      "response_type": "likert_scale",
+      "scale_min": 1,
+      "scale_max": 5,
+      "scale_labels": {
+        "1": "Very easy to maintain balance",
+        "2": "Mostly manageable",
+        "3": "Occasionally strained",
+        "4": "Frequently imbalanced",
+        "5": "Constant conflict between study and rest"
+      },
+      "required": true,
+      "model_input_feature_mapping": "social_support"
+    },
+    {
+      "id": "burnout_q7",
+      "text": "When you have a demanding academic week, how easily are you able to mentally recover over the weekend?",
+      "category": "Recovery Capacity",
+      "response_type": "likert_scale",
+      "scale_min": 1,
+      "scale_max": 5,
+      "scale_labels": {
+        "1": "Unable to recover; exhaustion carries over",
+        "2": "Takes multiple days to regain energy",
+        "3": "Moderate recovery",
+        "4": "Quick reset after downtime",
+        "5": "Effortless and completely renewed"
+      },
+      "required": true,
+      "model_input_feature_mapping": "anxiety_score"
+    },
+    {
+      "id": "burnout_q8",
+      "text": "How supported do you feel by peers, study groups, friends, or family during stressful academic periods?",
+      "category": "Social Support",
+      "response_type": "numeric_range",
+      "scale_min": 1,
+      "scale_max": 10,
+      "scale_labels": {
+        "1": "Completely isolated",
+        "10": "Exceptionally strong support network"
+      },
+      "required": true,
+      "model_input_feature_mapping": "social_support"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "model_a": [
+    "age",
+    "academic_year",
+    "study_hours_per_day",
+    "exam_pressure",
+    "academic_performance",
+    "sleep_hours",
+    "physical_activity",
+    "social_support",
+    "screen_time",
+    "internet_usage",
+    "financial_stress",
+    "family_expectation",
+    "gender_Female",
+    "gender_Male",
+    "gender_Other"
+  ],
+  "model_b": [
+    "age",
+    "academic_year",
+    "study_hours_per_day",
+    "exam_pressure",
+    "academic_performance",
+    "sleep_hours",
+    "physical_activity",
+    "social_support",
+    "screen_time",
+    "internet_usage",
+    "financial_stress",
+    "family_expectation",
+    "stress_level",
+    "anxiety_score",
+    "depression_score",
+    "gender_Female",
+    "gender_Male",
+    "gender_Other"
+  ]
+}
